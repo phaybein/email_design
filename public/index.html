@@ -14,10 +14,32 @@
 			width: 100%;
 		}
 
+		/* HEADER */
+		.header__left,
+		.header__right {
+			width: 100%;
+		}
+
+		/* SECTION APP */
+		.app__image {
+			width: 100%;
+		}
+
 		/* TABLET */
 		@media screen and (min-width:600px) {
 			.container {
 				width: 600px;
+			}
+
+			/* SECTION HEADER */
+			.header__left,
+			.header__right {
+				width: 50%;
+			}
+
+			/* SECTION APP */
+			.app__image {
+				width: initial;
 			}
 		}
 
@@ -30,7 +52,7 @@
 	</style>
 </head>
 
-<body style="background:#141414">
+<body style="background:#141414; margin: 0;">
 
 	<!-- START OF HTML EMAIL -->
 	<!-- PARENT TABLE -->
@@ -128,10 +150,11 @@
 							</table>
 							<!-- END OF HEADER RIGHT COLUMN -->
 
-							<img style="
-								display: block;
-    							margin: auto;
-							" src="./img/smartwatch.png" alt="Watch outline">
+							<div style="
+								padding: 0 10px;
+							">
+								<img src="./img/smartwatch.png" alt="Watch outline">
+							</div>
 						</td>
 					</tr>
 					<!-- END OF HEADER ROW -->
@@ -207,7 +230,7 @@
 										<table class="feature__notify" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0">
 											<tr>
 												<td>
-													<img src="./img/bell_icon.png" alt="bell icon">
+													<img src="./img/share_icon.png" alt="Share icon">
 												</td>
 
 												<td style="
@@ -217,7 +240,7 @@
 												letter-spacing: 1px;
 												text-transform:uppercase;
 											">
-													NOTIFY
+													share
 												</td>
 											</tr>
 										</table>
@@ -243,52 +266,6 @@
 									</td>
 								</tr>
 							</table>
-							<!-- <table class="feature_share" style="
-								display:inline-table;
-								margin-bottom: 68px;
-								padding: 0 10px;
-								width:calc(33.33% - 10px);
-							"
-							 width="33.33%" cellspacing="0" cellpadding="0" border="0">
-								<tr>
-									<td>
-										<img style="
-											display: block;
-											margin: auto;
-										" src="./img/share_icon.png" alt="Share icon">
-									</td>
-
-									<td style="
-										color: #141414;
-										font-size: 12px;
-										font-weight: 500;
-										letter-spacing: 1px;
-										text-transform:uppercase;
-									">
-										share
-									</td>
-								</tr>
-
-								<tr>
-									<td style="
-										color: #7f8887;
-										font-size: 13px;
-										line-height: 1.8;
-									">
-										Cras mattis consectetur purus sit fermentum
-									</td>
-								</tr>
-
-								<tr>
-									<td style="
-									color:#51a7ef;
-									font-size:13px;
-									font-weight: 500;
-									">
-										Learn more
-									</td>
-								</tr>
-							</table> -->
 							<!-- END OF SHARE COLUMN -->
 
 							<!-- START OF CONNECT COLUMN -->
@@ -300,7 +277,7 @@
 										<table class="feature__notify" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0">
 											<tr>
 												<td>
-													<img src="./img/bell_icon.png" alt="bell icon">
+													<img src="./img/wifi_icon.png" alt="wifi icon">
 												</td>
 
 												<td style="
@@ -310,7 +287,7 @@
 												letter-spacing: 1px;
 												text-transform:uppercase;
 											">
-													NOTIFY
+													connect
 												</td>
 											</tr>
 										</table>
@@ -398,10 +375,11 @@
 					">
 						<td>
 							<!-- START OF APP HEADER IMAGE -->
-							<img style="
+							<img class="app__image" style="
 								padding-top: 67px;
 								margin-bottom: 34px;
-							" src="./img/image_head.jpg" alt="image">
+							" src="./img/image_head.jpg"
+							 alt="image">
 							<!-- END OF APP HEADER IMAGE -->
 
 							<!-- START OF APP HEADER TEXT -->
@@ -482,7 +460,7 @@
 						<td style="
 							padding: 59px 0;
 						">
-							<img src="./img/one_app.jpg" alt="">
+							<img width="100%" src="./img/one_app.jpg" alt="">
 						</td>
 					</tr>
 					<!-- END OF SOLUTION ROW -->
