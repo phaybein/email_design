@@ -9,16 +9,19 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
 
 	<style>
+		/* MOBILE */
 		.container {
 			width: 100%;
 		}
 
+		/* TABLET */
 		@media screen and (min-width:600px) {
 			.container {
 				width: 600px;
 			}
 		}
 
+		/* DESKTOP */
 		@media screen and (min-width:960px) {
 			.container {
 				width: 960px;
@@ -54,14 +57,25 @@
 							 class="header__left" width="50%" align="left" cellspacing="0" cellpadding="0" border="0">
 								<tr>
 									<td>
-										<img style="margin:0 0 40px" src="./img/logo.png" alt="Brand logo">
+										<img style="margin:0 0 32px" src="./img/logo.png" alt="Brand logo">
 
-										<h2 style="font-weight: 300; margin: 0 0 22px;">
+										<h2 style="
+											font-size: 36px;
+											font-weight: 300; 
+											margin: 0 0 22px;
+											max-width: 11ch;
+											">
 											Get ready for
 											<span style="display: inline-block; font-size: 80px; font-weight: 700; text-transform:uppercase; line-height: 0.7; margin-top: 14px;">Hero</span>
 										</h2>
 
-										<p style="font-size: 12px; font-style:italic; line-height:2; margin:0 0 30px;">
+										<p style="
+											font-size: 12px; 
+											font-style:italic; 
+											line-height:2; 
+											margin:0 0 30px;
+											max-width: 34ch;
+											">
 											It seems like hundreds of new iWatch apps pop up every week, but which ones should you bother
 											trying?
 										</p>
@@ -138,32 +152,77 @@
 								lets you...</h3>
 
 							<!-- START OF NOTIFY COLUMN -->
-							<table class="feature__notify" style="
-								display:inline-table;
-								margin-bottom: 68px;
-								padding: 0 10px;
-							"
-							 width="33.33%" cellspacing="0" cellpadding="0" border="0">
+							<table class="feature__notify" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0" style="
+								padding: 15px 15px 70px
+							">
 								<tr>
 									<td>
-										<img style="
-													display: block;
-													margin: auto;
-												" src="./img/bell_icon.png"
-										 alt="Bell icon">
-									</td>
+										<table class="feature__notify" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0">
+											<tr>
+												<td>
+													<img src="./img/bell_icon.png" alt="bell icon">
+												</td>
 
+												<td style="
+													color: #141414;
+													font-size: 12px;
+													font-weight: 500;
+													letter-spacing: 1px;
+													text-transform:uppercase;
+												">
+													NOTIFY
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
 									<td style="
-										color: #141414;
-										font-size: 12px;
-										font-weight: 500;
-										letter-spacing: 1px;
-										text-transform:uppercase;
-									">
-										Notify
+											color: #7f8887;
+											font-size: 13px;
+											line-height: 1.8;
+										">
+										Cras mattis consectetur purus sit fermentum
 									</td>
 								</tr>
 
+								<tr>
+									<td style="
+										color:#51a7ef;
+										font-size:13px;
+										font-weight: 500;
+										">
+										Learn more
+									</td>
+								</tr>
+							</table>
+							<!-- END OF NOTIFY COLUMN -->
+
+							<!-- START OF SHARE COLUMN -->
+							<table class="feature__notify" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0" style="
+							padding: 15px 15px 70px
+						">
+								<tr>
+									<td>
+										<table class="feature__notify" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0">
+											<tr>
+												<td>
+													<img src="./img/bell_icon.png" alt="bell icon">
+												</td>
+
+												<td style="
+												color: #141414;
+												font-size: 12px;
+												font-weight: 500;
+												letter-spacing: 1px;
+												text-transform:uppercase;
+											">
+													NOTIFY
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
 								<tr>
 									<td style="
 										color: #7f8887;
@@ -184,10 +243,7 @@
 									</td>
 								</tr>
 							</table>
-							<!-- END OF NOTIFY COLUMN -->
-
-							<!-- START OF SHARE COLUMN -->
-							<table class="feature_share" style="
+							<!-- <table class="feature_share" style="
 								display:inline-table;
 								margin-bottom: 68px;
 								padding: 0 10px;
@@ -232,11 +288,55 @@
 										Learn more
 									</td>
 								</tr>
-							</table>
+							</table> -->
 							<!-- END OF SHARE COLUMN -->
 
 							<!-- START OF CONNECT COLUMN -->
-							<table class="feature_connect" style="
+							<table class="feature__notify" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0" style="
+							padding: 15px 15px 70px
+						">
+								<tr>
+									<td>
+										<table class="feature__notify" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0">
+											<tr>
+												<td>
+													<img src="./img/bell_icon.png" alt="bell icon">
+												</td>
+
+												<td style="
+												color: #141414;
+												font-size: 12px;
+												font-weight: 500;
+												letter-spacing: 1px;
+												text-transform:uppercase;
+											">
+													NOTIFY
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td style="
+										color: #7f8887;
+										font-size: 13px;
+										line-height: 1.8;
+									">
+										Cras mattis consectetur purus sit fermentum
+									</td>
+								</tr>
+
+								<tr>
+									<td style="
+									color:#51a7ef;
+									font-size:13px;
+									font-weight: 500;
+									">
+										Learn more
+									</td>
+								</tr>
+							</table>
+							<!-- <table class="feature_connect" style="
 								display:inline-table;
 								margin-bottom: 68px;
 								padding: 0 10px;
@@ -283,7 +383,7 @@
 										Learn more
 									</td>
 								</tr>
-							</table>
+							</table> -->
 							<!-- END OF CONNECT COLUMN -->
 
 						</td>
