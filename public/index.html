@@ -22,6 +22,31 @@
 
 		/* SECTION APP */
 		.app__image {
+			width: 90%;
+		}
+
+		/* SECTION FEATURE */
+		.feature__notify,
+		.feature__share,
+		.feature__connect {
+			width: 100%;
+		}
+
+		/* SECTION TOGETHER */
+		.together__sync,
+		.together__share,
+		.together__stats {
+			margin-bottom: 30px;
+			width: 100%;
+		}
+
+		/* SECTION BENEFITS */
+		.benefits__responsive,
+		.benefits__retina,
+		.benefits__skins,
+		.benefits__performance,
+		.benefits__menus,
+		.benefits__share {
 			width: 100%;
 		}
 
@@ -37,10 +62,37 @@
 				width: 50%;
 			}
 
+			/* SECTION FEATURE */
+			.feature__notify,
+			.feature__share,
+			.feature__connect {
+				width: 33.33%;
+			}
+
 			/* SECTION APP */
 			.app__image {
 				width: initial;
 			}
+
+			/* SECTION TOGETHER */
+			.together__sync,
+			.together__share,
+			.together__stats {
+				margin-bottom: 0;
+				width: calc(33.33% - 10px);
+			}
+
+			/* SECTION BENEFITS */
+			.benefits__responsive,
+			.benefits__retina,
+			.benefits__skins,
+			.benefits__performance,
+			.benefits__menus,
+			.benefits__share {
+				width: 49%;
+			}
+
+
 		}
 
 		/* DESKTOP */
@@ -180,7 +232,7 @@
 							">
 								<tr>
 									<td>
-										<table class="feature__notify" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0">
+										<table align="left" cellspacing="0" cellpadding="0" border="0">
 											<tr>
 												<td>
 													<img src="./img/bell_icon.png" alt="bell icon">
@@ -222,12 +274,12 @@
 							<!-- END OF NOTIFY COLUMN -->
 
 							<!-- START OF SHARE COLUMN -->
-							<table class="feature__notify" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0" style="
+							<table class="feature__share" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0" style="
 							padding: 15px 15px 70px
 						">
 								<tr>
 									<td>
-										<table class="feature__notify" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0">
+										<table align="left" cellspacing="0" cellpadding="0" border="0">
 											<tr>
 												<td>
 													<img src="./img/share_icon.png" alt="Share icon">
@@ -269,12 +321,12 @@
 							<!-- END OF SHARE COLUMN -->
 
 							<!-- START OF CONNECT COLUMN -->
-							<table class="feature__notify" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0" style="
+							<table class="feature__connect" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0" style="
 							padding: 15px 15px 70px
 						">
 								<tr>
 									<td>
-										<table class="feature__notify" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0">
+										<table align="left" cellspacing="0" cellpadding="0" border="0">
 											<tr>
 												<td>
 													<img src="./img/wifi_icon.png" alt="wifi icon">
@@ -488,12 +540,11 @@
 							</h2>
 
 							<!-- START OF SYNC COLUMN -->
-							<table class="together_sync" style="
+							<table class="together__sync" style="
 								display:inline-table;
 								padding: 0 10px;
-								width:calc(33.33% - 10px);
-							"
-							 width="33.33%" cellspacing="0" cellpadding="0" border="0">
+							" width="33.33%"
+							 cellspacing="0" cellpadding="0" border="0">
 								<tr>
 									<td>
 										<img style="
@@ -540,12 +591,11 @@
 							<!-- END OF SYNC COLUMN -->
 
 							<!-- START OF SHARE COLUMN -->
-							<table class="together_share" style="
+							<table class="together__share" style="
 							display:inline-table;
 							padding: 0 10px;
-							width:calc(33.33% - 10px);
-						"
-							 width="33.33%" cellspacing="0" cellpadding="0" border="0">
+						" width="33.33%"
+							 cellspacing="0" cellpadding="0" border="0">
 								<tr>
 									<td>
 										<img style="
@@ -592,12 +642,11 @@
 							<!-- END OF SHARE COLUMN -->
 
 							<!-- START OF STATS COLUMN -->
-							<table class="together_stats" style="
+							<table class="together__stats" style="
 							display:inline-table;
 							padding: 0 10px;
-							width:calc(33.33% - 10px);
-						"
-							 width="33.33%" cellspacing="0" cellpadding="0" border="0">
+						" width="33.33%"
+							 cellspacing="0" cellpadding="0" border="0">
 								<tr>
 									<td>
 										<img style="
@@ -656,7 +705,7 @@
 						">
 
 							<!-- START OF RESPONSIVE COLUMN -->
-							<table class="benefits_responsive" style="
+							<table class="benefits__responsive" style="
 								display:inline-table;
 								margin-bottom:40px;
 							"
@@ -705,7 +754,7 @@
 							<!-- END OF RESPONSIVE COLUMN -->
 
 							<!-- START OF RETINA COLUMN -->
-							<table class="benefits_retina" style="
+							<table class="benefits__retina" style="
 							display:inline-table;
 							margin-bottom:40px;
 						" width="49%"
@@ -755,7 +804,7 @@
 							<!-- END OF RETINA COLUMN -->
 
 							<!-- START OF VARIOUS SKINS COLUMN -->
-							<table class="benefits_skins" style="
+							<table class="benefits__skins" style="
 							display:inline-table;
 							margin-bottom:40px;
 						" width="49%"
@@ -804,7 +853,7 @@
 							<!-- END OF VARIOUS SKINS COLUMN -->
 
 							<!-- START OF GREAT PERFORMANCE COLUMN -->
-							<table class="benefits_performance" style="
+							<table class="benefits__performance" style="
 							display:inline-table;
 							margin-bottom:40px;
 						"
@@ -853,7 +902,7 @@
 							<!-- END OF GREAT PERFORMANCE COLUMN -->
 
 							<!-- START OF USERFRIENDLY MENUS COLUMN -->
-							<table class="benefits_menus" style="
+							<table class="benefits__menus" style="
 							display:inline-table;
 						" width="49%" cellspacing="0"
 							 cellpadding="0" border="0">
@@ -901,7 +950,7 @@
 							<!-- END OF USERFRIENDLY MENUS COLUMN -->
 
 							<!-- START OF SOCIAL SHARE COLUMN -->
-							<table class="benefits_share" style="
+							<table class="benefits__share" style="
 							display:inline-table;
 						" width="49%" cellspacing="0"
 							 cellpadding="0" border="0">
