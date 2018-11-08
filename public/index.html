@@ -20,9 +20,18 @@
 			width: 100%;
 		}
 
+		.header__left {
+			padding: 43px 10px 70px;
+		}
+
 		/* SECTION APP */
 		.app__image {
 			width: 90%;
+		}
+
+		.app__left__text,
+		.app__right__text {
+			margin: 0 auto 37px;
 		}
 
 		/* SECTION FEATURE */
@@ -88,6 +97,50 @@
 				width: initial;
 			}
 
+			.app__left-table,
+			.app__right-table {
+				display: inline-table;
+				width: 49%;
+			}
+
+			.app__left-table {
+				padding-right: 10px;
+			}
+
+			.app__right-table {
+				padding-left: 10px;
+			}
+
+			.app__left-table p,
+			.app__right-table p {
+				text-align: left;
+			}
+
+			.app__left-table img,
+			.app__right-table img {
+				display: block;
+			}
+
+			.app__left__text,
+			.app__right__text {
+				margin: 0 0 37px;
+			}
+
+			.app__left__text {
+				padding-left: 10px;
+			}
+
+			.app__right__text {
+				padding-left: 20px;
+			}
+
+			.app__left__image {
+				margin: 0 0 0 auto;
+			}
+
+
+
+
 			/* SECTION TOGETHER */
 			.together__sync,
 			.together__share,
@@ -128,6 +181,31 @@
 			.container {
 				width: 960px;
 			}
+
+			/* SECTION HEADER */
+			.header__left {
+				padding-left: 120px;
+			}
+
+			/* SECTION APP */
+			p.app__left__text {
+				margin: 0 0 37px auto;
+			}
+
+			/* SECTION BENEFIT */
+
+			.benefits__responsive,
+			.benefits__skins,
+			.benefits__menus {
+				padding-left: 100px;
+			}
+
+
+			.benefits__retina,
+			.benefits__performance,
+			.benefits__share {
+				padding-left: 100px;
+			}
 		}
 	</style>
 </head>
@@ -154,7 +232,6 @@
 								background: rgb(101,255,253);
 								background: linear-gradient(130deg, rgba(101,255,253,1) 27%, rgba(34,150,238,1) 84%);color:#fff; 
 								font-family:'Open Sans', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; 
-								padding:43px 10px 70px; 
 								text-align:left;"
 							 class="header__left" width="50%" align="left" cellspacing="0" cellpadding="0" border="0">
 								<tr>
@@ -486,51 +563,51 @@
 							</table>
 							<!-- END OF APP HEADER TEXT -->
 
-							<!-- START OF APP HEADER TABLE -->
+							<!-- START OF APP LEFT TABLE -->
 							<table style="
 								margin-bottom: 75px;
-								padding-left: 10px;
-							" class="app_header_table" width="100%"
+								text-align: center;
+							" class="app__left-table" width="100%"
 							 cellspacing="0" cellpadding="0" border="0">
 								<tr>
-									<td style="
-										padding-right: 10px;
-										text-align: right;
-									">
-										<p style="
+									<td>
+										<p class="app__left__text" style="
 											color: #7f8887;
 											font-size: 13px;
 											line-height: 1.8;
-											margin-bottom: 37px;
-											text-align: left;
 											max-width: 35ch;
 										">
 											The Strong museum has collected more than 55,000 video games and related artifacts from the history of
 											gaming.
 										</p>
-										<img src="./img/appstore.png" alt="Apple app store icon">
+										<img class="app__left__image" src="./img/appstore.png" alt="Apple app store icon">
 									</td>
+								</tr>
+							</table>
+							<!-- END OF APP LEFT TABLE -->
 
-									<td style="
-										padding-left: 10px;
-										text-align: left;
-									">
-										<p style="
-											color: #7f8887;
-											font-size: 13px;
-											line-height: 1.8;
-											margin-bottom: 36px;
-											padding-left: 10px;
-											text-align: left;
-											max-width: 35ch;
+							<!-- START OF APP RIGHT TABLE -->
+							<table style="
+							margin-bottom: 75px;
+							text-align: center;
+							" class="app__right-table" width="100%"
+							 cellspacing="0" cellpadding="0" border="0">
+								<tr>
+									<td>
+										<p class="app__right__text" style="
+										color: #7f8887;
+										font-size: 13px;
+										line-height: 1.8;
+										max-width: 35ch;
 											">
 											Remote Mouse lets you use your iPhone, Android or Windows Phone as a touchpad to control your onscreen
 											cursor in a pinch.
 										</p>
-										<img src="./img/playstore.png" alt="Google play store icon">
+										<img class="app__right__image" src="./img/playstore.png" alt="Google play store icon">
 									</td>
 								</tr>
 							</table>
+							<!-- END OF APP RIGHT TABLE -->
 						</td>
 					</tr>
 					<!-- END OF APP ROW -->
