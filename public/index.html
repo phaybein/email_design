@@ -138,10 +138,11 @@
 				margin: 0 0 0 auto;
 			}
 
-
-
-
 			/* SECTION TOGETHER */
+			.together__wrapper {
+				padding: 81px 0 70px;
+			}
+
 			.together__sync,
 			.together__share,
 			.together__stats {
@@ -193,18 +194,30 @@
 			}
 
 			/* SECTION BENEFIT */
-
 			.benefits__responsive,
 			.benefits__skins,
 			.benefits__menus {
 				padding-left: 100px;
 			}
 
-
 			.benefits__retina,
 			.benefits__performance,
 			.benefits__share {
 				padding-left: 100px;
+			}
+
+			/* SECTION SOLUTION */
+			.solution {
+				text-align: center;
+			}
+
+			.solution__image {
+				max-width: 611px;
+			}
+
+			/* SECTION TOGETHER */
+			.together__wrapper {
+				padding: 81px 50px 70px;
 			}
 		}
 	</style>
@@ -617,7 +630,7 @@
 						<td style="
 							padding: 59px 0;
 						">
-							<img width="100%" src="./img/one_app.jpg" alt="">
+							<img class="solution__image" width="100%" src="./img/one_app.jpg" alt="">
 						</td>
 					</tr>
 					<!-- END OF SOLUTION ROW -->
@@ -628,9 +641,7 @@
 						font-family:'Open Sans', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
 						text-align: center;
 					">
-						<td style="
-							padding: 81px 0 70px;
-						">
+						<td class="together__wrapper">
 							<h2 style="
 								font-size: 25px;
 								font-weight: 300;
